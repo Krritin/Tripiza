@@ -3,7 +3,7 @@ import axios from 'axios';
 import TripCard from './TripCard';
 import CreateTripModal from './CreateTripModal';
 
-const API_URL = 'http://localhost:5667/api';
+const API_URL = import.meta.env.VITE_API_URL;
 
 function Dashboard() {
   const [trips, setTrips] = useState([]);

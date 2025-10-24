@@ -5,7 +5,7 @@ import DayTimeline from './DayTimeline';
 import AddActivityModal from './AddActivityModal';
 import ShareModal from './ShareModal';
 
-const API_URL = 'http://localhost:5667/api';
+const API_URL = import.meta.env.VITE_API_URL;
 
 function ItineraryView() {
   const { id } = useParams();
